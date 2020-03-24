@@ -1,6 +1,6 @@
-FROM golang:1.10.2
+FROM golang:1.14.1
 MAINTAINER FOUCHARD Tony <t.fouchard@qwant.com>
-ENV version b7e842d893d29200a5108eab717f5ab01d783c0c
+ENV version 1739a339d3404a4164a5664dc38e328108c6a2a6
 RUN apt-get update
 RUN go get github.com/kumina/unbound_exporter
 WORKDIR /go/src/github.com/kumina/unbound_exporter
